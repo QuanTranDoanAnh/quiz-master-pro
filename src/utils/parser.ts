@@ -20,7 +20,7 @@ export const parseHtmlToQuestions = (htmlContent: string): Question[] => {
   // Matches: "Question 1:", "Question 105:"
   const questionStartRegex = /^\s*Question\s+(\d+)\s*:/i; 
   // Matches: "a.", "a)", "A." at start of line
-  const optionStartRegex = /^\s*([a-d])[.)]\s+/i; 
+  const optionStartRegex = /^\s*([a-e])[.)]\s+/i; 
 
   elements.forEach((el) => {
     const text = el.textContent?.trim() || '';
